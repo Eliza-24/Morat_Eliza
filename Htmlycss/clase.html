@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>AppDeGatos</title>
+    
+    <!-- Enlace a un archivo CSS externo llamado "style.css" para los estilos de la página -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Título principal de la página -->
+    <h2>AppDeGatos</h2>
+
+    <!-- Contenido principal de la página -->
+    <main>
+      <!-- Subtítulo dentro de la sección principal -->
+      <h3>Imágenes de Gatos:</h3>
+
+      <!-- Comentario de desarrollo: indica que aquí se debe agregar un enlace a más imágenes de gatos -->
+      <!-- TODO: Agregar enlace a imágenes de gatos -->
+      
+      <!-- Párrafo con un enlace para ver más imágenes de gatos -->
+      <p>Haz click aquí para ver más 
+        <a href="#" target="_blank" rel="noopener noreferrer">imágenes de gatos.</a>
+      </p>
+
+      <!-- Enlace que contiene una imagen de un gato -->
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img src="https://bit.ly/fcc-relaxing-cat" alt="Un lindo gato naranja recostado sobre su espalda.">
+      </a>
+
+      <!-- Línea horizontal para separar secciones -->
+      <hr>
+
+      <!-- Subtítulo de la sección de listas de gatos -->
+      <h3>Listas de Gatos</h3>
+
+      <!-- Contenedor de las listas de cosas que los gatos aman y odian -->
+      <div>
+        <!-- Párrafo que introduce una lista de cosas que los gatos aman -->
+        <p>Cosas que los gatos <em>aman</em>:</p>
+        
+        <!-- Lista desordenada de cosas que los gatos aman -->
+        <ul>
+          <li>Menta gatuna</li>
+          <li>Apuntadores Láser</li>
+          <!-- El elemento "Lasaña" está tachado usando la etiqueta <s> -->
+          <li><s>Lasaña</s></li>
+        </ul>
+
+        <!-- Imagen de lasaña -->
+        <img src="imagenes/lasana.jpg" alt="Lasaña">
+
+        <!-- Párrafo que introduce una lista de cosas que los gatos odian -->
+        <p>Cosas que los gatos <strong>odian</strong>:</p>
+        
+        <!-- Lista ordenada de cosas que los gatos odian -->
+        <ol>
+          <li>Tratamientos antipulgas</li>
+          <li>Truenos</li>
+          <li>Otros gatos</li>
+        </ol>
+      </div>
+
+      <!-- Imagen de varios gatos -->
+      <img src="imagenes/gatos.jpg" alt="Gatos">
+
+      <!-- Formulario para enviar datos sobre las preferencias del gato -->
+      <form action="/enviar-respuesta">
+      
+        <!-- Opción de radio para indicar si el gato vive en el interior o exterior -->
+        <label for="interior">
+          <input id="interior" type="radio" value="interior" name="interior-exterior" checked>Interior
+        </label>
+        <br>
+        <label for="exterior">
+          <input id="exterior" type="radio" value="exterior" name="interior-exterior">Exterior
+        </label>
+        <br>
+      
+        <!-- Opciones de casilla de verificación para indicar la personalidad del gato -->
+        <label for="carinoso">
+          <input id="carinoso" type="checkbox" value="carinoso" name="personalidad" checked>Cariñoso
+        </label>
+        <br>
+        <label for="perezoso">
+          <input id="perezoso" type="checkbox" value="perezoso" name="personalidad">Perezoso
+        </label>
+        <br>
+        <label for="energico">
+          <input id="energico" type="checkbox" value="energico" name="personalidad">Enérgico
+        </label>
+        <br>
+
+        <!-- Campo de texto donde el usuario puede escribir la URL de una foto de su gato -->
+        <input type="text" placeholder="URL de la foto de tu gato" required>
+        <br>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <!-- Pie de página con un enlace a freeCodeCamp -->
+    <footer>
+      <p><small>Sin Derechos de Autor - <a href="https://www.freecodecamp.org/espanol/">freeCodeCamp.org</a></small></p>
+    </footer>
+  </body>
+</html>
